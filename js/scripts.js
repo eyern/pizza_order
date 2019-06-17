@@ -10,7 +10,7 @@ Pizza.prototype.cost = function () {
     cost += topping
   });
   var total = cost + this.size;
-  this.total = "Your total is: " + "ksh" + total.toFixed(2);
+  this.total = "Your total is: " + "ksh." + total.toFixed(2);
 };
 
 // Front-End
