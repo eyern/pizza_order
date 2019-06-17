@@ -6,6 +6,8 @@ Pizza_Order
 a repository hosting a web application that allows one to order pizza with different toppings and sizes.
 ## Set-up instructions
 most importantly the link to livesite on GitHub pages and the following; laptop/pc/smartphone or any PDA to access the website.
+## Link to livesite on GitHub site
+https://eyern.github.io/pizza_order/
 ### Technologies used
 HTML
 CSS
