@@ -48,12 +48,9 @@ $(function() {
         } else if(toppingsText === "Onions") {
           $(".pizza-toppings-container img").remove();
           $(".pizza-toppings-container").prepend('<img src="images/onions.jpeg">');
-        } else if(toppingsText === "Artichoke") {
+        } else if(toppingsText === "Barbecue sauce") {
           $(".pizza-toppings-container img").remove();
-          $(".pizza-toppings-container").prepend('<img src="imgs/artichokes.png">');
-        } else if(toppingsText === "Tempeh") {
-          $(".pizza-toppings-container img").remove();
-          $(".pizza-toppings-container").prepend('<img src="imgs/tempehs.png">');
+          $(".pizza-toppings-container").prepend('<img src="images/ba.png">');
         }
         $("#toppings").val(0);
       }
