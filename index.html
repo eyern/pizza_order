@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="shortcut icon" href="images/pizzaicon.png"
+    <link rel="shortcut icon" href="images/pizzaicon.png">
     <meta charset="utf-8">
     <title>Eyern's awesome Pizza</title>
   </head>
@@ -12,16 +12,16 @@
       <form id="pizzaOrder">
         <div id="orderStarter">
           <div class="pizza-logo mt-3">
-            <img src="images/pizzalogo.png" alt="">
+            <img src="images/pizzalogo.jpeg" alt="">
           </div>
           <div class="row">
             <div class="col mb-3 mt-3">
               <div class="pizza-image-container">
-                <img src="imgs/pizza.png" alt="">
+                <img src="images/pizza.png" alt="">
                 <div class="pizza-toppings-container"></div>
               </div>
             </div>
-            <button type="submit" class="btn btn-danger mt-4 w-60">Start your Order!</button>
+            <button type="submit" class="btn btn-danger mt-4 w-140">Start your Order!</button>
           </div>
         </div>
         <div class="form-group" id="pizzaForm">
@@ -29,31 +29,30 @@
             <div class="topping-option-container">
               <select class="form-control" id="toppings">
                 <option value="0">Select a topping</option>
-                <option value="0.5">Pepperoni</option>
-                <option value="0.5">Sausage</option>
-                <option value="0.5">Bell Pepper</option>
-                <option value="0.5">Mushroom</option>
-                <option value="0.5">Onion</option>
-                <option value="0.5">Artichoke</option>
-                <option value="0.5">Tempeh</option>
+                <option value="140">Sausage</option>
+                <option value="120">Pepperoni</option>
+                <option value="85">Bell Pepper</option>
+                <option value="180">Mushroom</option>
+                <option value="130">Onion</option>
+                <option value="140">Tomatoes</option>
+                <option value="150">Barbecue sauce</option>
               </select>
               <button type="button" class="btn btn-info ml-3" id="addToppings">Add</button>
             </div>
-            <p class="error">Select an option</p>
+            <p class="error">Select a topping</p>
           </div>
           <div id="sizeSection">
             <select class="form-control" id="sizes">
               <option value="0">Select a size</option>
-              <option value="4">Small</option>
-              <option value="5">Medium</option>
-              <option value="6">Large</option>
+              <option value="1800">medium</option>
+              <option value="2500">large</option>
+              <option value="1200">small</option>
             </select>
             <p class="error">You must Select an Option!</p>
           </div>
           <button type="button" class="btn btn-success mt-3" id="order">Order</button>
         </div>
         <div class="order-receipt" id="orderConfirmation">
-          <h4>These toppings have been added by you:</h4>
           <ul></ul>
           <div class="total container">
             <h2 id="totalCost"></h2>
@@ -61,7 +60,7 @@
         </div>
       </form>
     </div>
-     <script src="js/jquery-3.3.1.js"></script>
-     <script src="js/scripts.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>   
+    <script src="js/scripts.js"></script>
   </body>
 </html>
