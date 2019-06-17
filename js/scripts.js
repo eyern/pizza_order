@@ -1,4 +1,4 @@
-// Business Logic
+// Back-End
 function Pizza () {
   this.toppings = [];
   this.size;
@@ -10,10 +10,10 @@ Pizza.prototype.cost = function () {
     cost += topping
   });
   var total = cost + this.size;
-  this.total = "Your total is: " + "$" + total.toFixed(2);
+  this.total = "Your total is: " + "ksh" + total.toFixed(2);
 };
 
-// User Interface Logic
+// Front-End
 $(function() {
   $("#pizzaOrder").submit(function(event) {
     event.preventDefault();
