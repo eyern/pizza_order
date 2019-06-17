@@ -22,32 +22,32 @@ $(function() {
     $("#orderStarter button").hide();
     $(".pizza-image-container").fadeIn();
     $("button#addToppings").click(function() {
-      var toppingsPrice = parseFloat($("#toppings").val());
+      var toppingsPrice = parseInt($("#toppings").val());
       var toppingsText = $("#toppings option:selected").text();
       if (toppingsPrice === 0) {
         $(".error").show();
         $("#toppings").addClass('error-border');
-      } else if(toppingsPrice === 0.5) {
+      } else if(toppingsPrice === 400) {
         $(".order-receipt").fadeIn();
         $(".error").hide();
         $("#toppings").removeClass('error-border');
         pizza.toppings.push(toppingsPrice);
         $("#orderConfirmation ul").append('<li>' + toppingsText + '&nbsp;</li>');
-        if(toppingsText === "Pepperoni") {
+        if(toppingsText === "Sausage") {
           $(".pizza-toppings-container img").remove();
-          $(".pizza-toppings-container").prepend('<img src="imgs/pepperonis.png">');
-        } else if(toppingsText === "Sausage") {
+          $(".pizza-toppings-container").prepend('<img src="images/sausage.jpeg">');
+        } else if(toppingsText === "Pepperoni") {
           $(".pizza-toppings-container img").remove();
-          $(".pizza-toppings-container").prepend('<img src="imgs/sausages.png">');
+          $(".pizza-toppings-container").prepend('<img src="images/pepporni.jpeg">');
         } else if(toppingsText === "Bell Pepper") {
           $(".pizza-toppings-container img").remove();
-          $(".pizza-toppings-container").prepend('<img src="imgs/bell-pepper.png">');
+          $(".pizza-toppings-container").prepend('<img src="images/Bell-pepper.png">');
         } else if(toppingsText === "Mushroom") {
           $(".pizza-toppings-container img").remove();
-          $(".pizza-toppings-container").prepend('<img src="imgs/mushroom.png">');
-        } else if(toppingsText === "Onion") {
+          $(".pizza-toppings-container").prepend('<img src="images/mushroom.png">');
+        } else if(toppingsText === "Onions") {
           $(".pizza-toppings-container img").remove();
-          $(".pizza-toppings-container").prepend('<img src="imgs/onions.png">');
+          $(".pizza-toppings-container").prepend('<img src="images/onions.jpeg">');
         } else if(toppingsText === "Artichoke") {
           $(".pizza-toppings-container img").remove();
           $(".pizza-toppings-container").prepend('<img src="imgs/artichokes.png">');
